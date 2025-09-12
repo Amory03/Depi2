@@ -11,76 +11,46 @@
         * {
             font-family: 'Inter', sans-serif;
         }
-        
-        .mono {
-            font-family: 'JetBrains Mono', monospace;
-        }
-        
+        .mono { font-family: 'JetBrains Mono', monospace; }
         .gradient-bg {
             background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 50%, #2d3748 100%);
         }
-        
         .cyber-gradient {
             background: linear-gradient(135deg, #00d4ff 0%, #0066cc 50%, #003d7a 100%);
         }
-        
         .cyber-text {
             background: linear-gradient(135deg, #00d4ff, #0099ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
-        .glow {
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-        }
-        
+        .glow { box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
         .hover-glow:hover {
             box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
             transform: translateY(-2px);
         }
-        
         .card-hover:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
         }
-        
-        .skill-icon {
-            transition: all 0.3s ease;
-        }
-        
+        .skill-icon { transition: all 0.3s ease; }
         .skill-icon:hover {
             transform: scale(1.1) rotate(5deg);
             color: #00d4ff;
         }
-        
         @keyframes pulse-glow {
             0%, 100% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
             50% { box-shadow: 0 0 40px rgba(0, 212, 255, 0.6); }
         }
-        
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-        
-        .text-shadow {
-            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
-        }
-        
+        .pulse-glow { animation: pulse-glow 2s infinite; }
+        .text-shadow { text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); }
         .border-cyber {
             border: 2px solid transparent;
             background: linear-gradient(45deg, #0f1419, #1a1f2e) padding-box,
                         linear-gradient(45deg, #00d4ff, #0066cc) border-box;
         }
-        
-        body {
-            overflow-x: hidden;
-        }
-        
-        .section-spacing {
-            margin-bottom: 2rem;
-        }
-        
+        body { overflow-x: hidden; }
+        .section-spacing { margin-bottom: 2rem; }
         @media print {
             body { margin: 0; padding: 0; }
             .no-print { display: none; }
@@ -109,7 +79,7 @@
 
     <div class="max-w-7xl mx-auto px-4 pb-8">
         <!-- About Section -->
-        <section class="section-spacing">
+        <section class="section-spacing" id="about">
             <div class="bg-gray-800 bg-opacity-50 rounded-2xl p-6 border-cyber glow">
                 <h2 class="text-3xl font-bold cyber-text mb-4 flex items-center">
                     <i class="fas fa-user-circle mr-3"></i>ABOUT ME
@@ -121,7 +91,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section class="section-spacing">
+        <section class="section-spacing" id="skills">
             <div class="bg-gray-800 bg-opacity-50 rounded-2xl p-6 border-cyber glow">
                 <h2 class="text-3xl font-bold cyber-text mb-6 flex items-center">
                     <i class="fas fa-code mr-3"></i>SKILLS
@@ -130,29 +100,34 @@
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-4 text-center hover-glow transition-all duration-300 card-hover">
                         <i class="fas fa-network-wired text-3xl text-blue-400 skill-icon mb-2"></i>
                         <h3 class="font-semibold text-white">Networking</h3>
+                        <p class="text-gray-300 text-sm mt-2">Strong knowledge of Cisco, routing, switching, VPN, and secure network design.</p>
                     </div>
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-4 text-center hover-glow transition-all duration-300 card-hover">
                         <i class="fas fa-robot text-3xl text-green-400 skill-icon mb-2"></i>
                         <h3 class="font-semibold text-white">AI Development</h3>
+                        <p class="text-gray-300 text-sm mt-2">Hands-on experience in ML/DL for intrusion detection, anomaly detection, and speech recognition.</p>
                     </div>
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-4 text-center hover-glow transition-all duration-300 card-hover">
                         <i class="fas fa-image text-3xl text-purple-400 skill-icon mb-2"></i>
                         <h3 class="font-semibold text-white">Image Processing</h3>
+                        <p class="text-gray-300 text-sm mt-2">Expertise in digital image enhancement, filtering, and object recognition applications.</p>
                     </div>
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-4 text-center hover-glow transition-all duration-300 card-hover">
                         <i class="fab fa-python text-3xl text-yellow-400 skill-icon mb-2"></i>
                         <h3 class="font-semibold text-white">Python Programming</h3>
+                        <p class="text-gray-300 text-sm mt-2">Proficient in building automation scripts, data analysis, and full-stack applications.</p>
                     </div>
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-4 text-center hover-glow transition-all duration-300 card-hover">
                         <i class="fas fa-desktop text-3xl text-red-400 skill-icon mb-2"></i>
                         <h3 class="font-semibold text-white">GUI App Development</h3>
+                        <p class="text-gray-300 text-sm mt-2">Designing user-friendly applications with Tkinter and PyQt for practical solutions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="section-spacing">
+        <section class="section-spacing" id="projects">
             <div class="bg-gray-800 bg-opacity-50 rounded-2xl p-6 border-cyber glow">
                 <h2 class="text-3xl font-bold cyber-text mb-6 flex items-center">
                     <i class="fas fa-project-diagram mr-3"></i>PROJECTS
@@ -163,21 +138,21 @@
                             <i class="fas fa-shield-alt text-2xl text-red-400 mr-3"></i>
                             <h3 class="text-xl font-semibold text-white">Smart Intrusion Detection System</h3>
                         </div>
-                        <p class="text-gray-300">An AI-powered security system that detects and prevents unauthorized access in real time.</p>
+                        <p class="text-gray-300">AI-powered security system that detects and prevents unauthorized access in real time using advanced ML techniques. Designed to differentiate between normal and malicious traffic while maintaining network performance.</p>
                     </div>
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-6 hover-glow transition-all duration-300 card-hover">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-image text-2xl text-purple-400 mr-3"></i>
                             <h3 class="text-xl font-semibold text-white">Image Processing GUI App</h3>
                         </div>
-                        <p class="text-gray-300">A desktop app that allows users to apply histogram equalization, contrast stretching, and noise filtering.</p>
+                        <p class="text-gray-300">Desktop app enabling users to apply histogram equalization, contrast stretching, and noise filtering. Useful for medical imaging, education, and research purposes.</p>
                     </div>
                     <div class="bg-gray-700 bg-opacity-70 rounded-xl p-6 hover-glow transition-all duration-300 card-hover">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-microphone text-2xl text-green-400 mr-3"></i>
                             <h3 class="text-xl font-semibold text-white">Speech Recognition with MLP</h3>
                         </div>
-                        <p class="text-gray-300">A GUI-based speech recognition tool using MFCC feature extraction and machine learning classification.</p>
+                        <p class="text-gray-300">GUI-based speech recognition tool using MFCC feature extraction and MLP classification. Designed for voice command systems and smart assistant applications.</p>
                     </div>
                 </div>
             </div>
@@ -266,7 +241,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section-spacing">
+        <section class="section-spacing" id="contact">
             <div class="bg-gray-800 bg-opacity-50 rounded-2xl p-6 border-cyber glow text-center">
                 <h2 class="text-3xl font-bold cyber-text mb-4 flex items-center justify-center">
                     <i class="fas fa-envelope mr-3"></i>LET'S CONNECT
